@@ -1,0 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+
+body  {
+  height:100vh;
+  width:100vw;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+
+  }
+
+.container {
+  text-align: center;
+  color: white;
+
+}
+
+.dicas{
+  display:block;
+}
+
+.jardinagem{
+  display:block;
+}
+
+.infaliveis {
+  display:block;
+}
+
+
+
+.background-image {
+  background-image: url('../imagens/jardinagem.foto.png');
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+header h1 {
+  margin-top: 50px; 
+  font-size: 3em;
+  font-weight: bold;
+  align-items: center;
+}
+
+main p {
+  font-size: 1.5em;
+  margin: 20px 0;
+}
+
+ button{
+  margin: 30px auto;
+  display: inline-block;
+}
+
+
+
+  
