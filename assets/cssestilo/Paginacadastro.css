@@ -7,9 +7,12 @@ input,  button {
   }
   
    button {
-    background-color: #ffcc00; /* Cor de fundo do botão */
-    color: black;
+    background-color: #395826; /* Cor de fundo do botão */
+    color: #FFF;
     cursor: pointer;
+    border-radius: 5px;
+    border:1px solid white;
+    width: 400px;
   }
   
   
@@ -17,3 +20,24 @@ input,  button {
     background-color: #e6b800;
   }
   
+
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 10px;
+    width: 400px;
+}
+
+#nome{
+    width:100%;
+}
+#textarea{
+    width: 100%;
+}
+
+#foto{
+    width:100%;
+}

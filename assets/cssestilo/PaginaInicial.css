@@ -18,19 +18,43 @@ body  {
 .container {
   text-align: center;
   color: white;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+  position: relative;
+
+  
 
 }
 
 .dicas{
   display:block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.1em;
+  letter-spacing: 25px;
+
 }
 
 .jardinagem{
   display:block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.0em;
+  color: #FFE98F;
+  
 }
 
 .infaliveis {
   display:block;
+  /* align-items: center;
+  justify-content: center; */
+  position: relative;
+  font-family: "Dancing Script", cursive;
+  color: #FFF;
+  font-size: 1.3em;
+  letter-spacing: 5.3px;
 }
 
 
@@ -48,6 +72,10 @@ header h1 {
   font-size: 3em;
   font-weight: bold;
   align-items: center;
+  display: flex;
+  flex-direction: column ;
+  justify-content: center;
+  gap: 5px ;
 }
 
 main p {
@@ -60,6 +88,27 @@ main p {
   display: inline-block;
 }
 
+.container-principal {
+  display:flex;
+  
+}
+.img2{
+  width: 78px;
+  position: absolute;
+  top: 30px;
 
+}
+ .img{
+  width: 78px;
+  position: absolute;
+  right: 300px;
+} 
 
+.buttonp{
+ position: absolute;
+ top:379px;
+ left: 50%;
+ transform:translate(-50%) ;
+
+}
   
