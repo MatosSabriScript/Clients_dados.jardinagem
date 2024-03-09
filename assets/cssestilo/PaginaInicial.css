@@ -111,4 +111,30 @@ main p {
  transform:translate(-50%) ;
 
 }
+
+ /* Criando responsividade */
+
+@media screen and (max-width: 767px) {
+  .container {
+    gap: 5px;
+  }
+  .jardinagem{
+    font-size: 1.3em;
+  }
+  .img {
+    display: none;
+  }
+  .buttonp {
+    top: 349px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .img {
+    right: 200px;
+  }
+  .buttonp {
+    top: 359px;
+  }
+}
   
