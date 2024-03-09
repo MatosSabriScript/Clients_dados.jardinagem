@@ -9,13 +9,28 @@
 <body>
   <header>
     <h1> Compartilhe sua Dica</h1>
-    <form id="form">
-      <input type="text" id="nome" placeholder="Seu nome" required />
-      <!-- <input type="text" id="dica" placeholder="Sua dica de jardinagem" required /> -->
-      <textarea id="textarea" cols="30" required placeholder="Digite sua dica aqui" rows="10"></textarea>
-      <input type="file" id="foto" accept=".jpg, .jpeg, .png" required />
-      <button type="submit">Enviar Dica</button>
-    </form>
   </header>
+  <main class="main">
+  <div>
+    <form id="form" autocomplete="on">
+      <div>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Seu nome"  minlength="3"  required />
+        </div>
+      <!-- <input type="text" id="dica" placeholder="Sua dica de jardinagem" required /> -->
+      <textarea id="textarea" cols="30" required placeholder="Digite sua dica aqui" minlength="30" maxlength="300" rows="10"></textarea>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" maxlength="59" placeholder="Digite seu e-mail" autocomplete="email" required/>
+      </div>
+      <div>
+        <label for="celular">Celular:</label>
+        <input type="tel" id="celular" max="15" pattern="[0-9]{11}"  placeholder="00000000000" required/>
+      </div>
+      <input type="file" id="foto" accept=".jpg, .jpeg, .png" required />
+      <button type="submit" id="botaosalvar">Enviar Dica</button>
+    </form>
+  </div>
+  </main>
   </body>
 </html>

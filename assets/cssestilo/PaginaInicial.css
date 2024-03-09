@@ -113,7 +113,6 @@ main p {
 }
 
  /* Criando responsividade */
-
 @media screen and (max-width: 767px) {
   .container {
     gap: 5px;
