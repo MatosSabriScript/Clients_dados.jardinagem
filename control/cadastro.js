@@ -10,14 +10,66 @@ botaoSalvar.addEventListener('click',function(e){
 
      if(nome.value.length >=3 && dica.value.length >=30 && celular.value.length>=11 && email.value.length>=11){
         e.preventDefault()
-        console.log(nome.value)
-        console.log(celular.value)
-        console.log(dica.value)
-        console.log(email.value)
+        criarDica(nome.value,dica.value,email.value,celular.value)
      }
 }) 
 
 
+
+class Dica {
+    constructor(nome,dica,email,celular){
+        this.nome=nome
+        this.dica=dica
+        this.email=email
+        this.celular=celular
+    }
+}
     
+var dicasSalvas=[]
+
+function criarDica(nome,dica,email,celular){
+    const novaDica= new Dica (nome,dica,email,celular)
+    dicasSalvas.push(novaDica)
+    criarElemento(novaDica)
+}
+
+function criarElemento(dica){
+    const div= document.createElement("div")
+    div.classList.add("card")
+    const elementoNome= document.createElement("span")
+    elementoNome.innerHTML=dica.nome
+
+    const elementoDica= document.createElement("span")
+    elementoDica.innerHTML=dica.dica
+
+    const elementoEmail= document.createElement("span")
+    elementoEmail.innerHTML=dica.email
+
+    const elementoCelular= document.createElement("span")
+    elementoCelular.innerHTML=dica.celular
+
+    div.appendChild(elementoNome)
+    div.appendChild(elementoDica)
+    div.appendChild(elementoEmail)
+    div.appendChild(elementoCelular)
+    
+   
+    const botaoApagar= document.createElement('button')
+    botaoApagar.innerHTML= "Apagar"
+    botaoApagar.addEventListener('click',function(){
+        main.removeChild(div)
+        const index = dicasSalvas.findIndex(dicaIndex => {
+            return dicaIndex.nome === dica.nome &&
+            dicaIndex.dica === dica.dica &&
+            dicaIndex.email === dica.email &&
+            dicaIndex.celular === dica.celular 
+        })
+        dicasSalvas.splice(index, 1)
+    })
+
+    div.appendChild(botaoApagar)
+    main.appendChild(div)
+}
+
 
   
