@@ -1,0 +1,13 @@
+Mini Projeto do Módulo 2: Armazenagem e Recebimento de Dados
+Este mini projeto tem como objetivo demonstrar a utilização de arrays e outros métodos para armazenar e receber dados em um sistema simples.
+
+Funcionalidades
+Armazenamento de dados em um array
+Recebimento de dados do usuário
+Manipulação dos dados armazenados
+Tecnologias Utilizadas
+JavaScript
+Como Utilizar
+Clone este repositório para o seu computador
+Abra o arquivo index.html em um navegador web
+Siga as instruções na tela para armazenar e receber dados
