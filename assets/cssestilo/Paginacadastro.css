@@ -9,7 +9,15 @@ body  {
     width: 100vw;
     display: flex;
     flex-direction: column;
+
 }
+
+.background-image2 {
+    background-image: url('../imagens/Fotodica.png');
+    background-size: cover;
+    background-position: center;
+  
+  }
 
 input, .button {
     padding: 10px;
@@ -44,16 +52,19 @@ input, .button {
     height: 410px;
 }
 
-#nome {
-    align-items: flex-start;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
+#nome::placeholder{
+    font-family: "Fredoka", sans-serif;
+    color: #30442D; 
+    font-size: 2.0em;
+    font-weight: bold;
 }
 
-#textarea {
+#textarea::placeholder {
     width: 100%;
-    position: static;
+    font-family: "Open Sans", sans-serif;
+    color: #30442D;
+    display: flex;
+    align-items: center;
 }
 
 #foto {
