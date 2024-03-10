@@ -1,40 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../assets/cssestilo/Paginacadastro.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-<title > Cadastrar Dica de Jardinagem</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/cssestilo/Paginacadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title > Cadastrar Dica de Jardinagem</title>
 </head>
 <body class="background-image2">
-  <header>
-    <h1 id="titulodica"> Compartilhe sua Dica</h1>
-  </header>
-  <main class="main">
-  <div>
+    <header>
+    </header>
+    <main class="main">
+    <div>
     <form class="card" autocomplete="on">
-      <div>
-        <input type="text" id="nome" placeholder="Seu nome:"  minlength="3"  required />
+        <div class="logo">
+            <img src="../assets/imagens/logo.png" alt="">
+            <span> @jardim.Perfect</span>
         </div>
-      <!-- <input type="text" id="dica" placeholder="Sua dica de jardinagem" required /> -->
-      <textarea id="textarea" cols="30" required placeholder="Digite sua dica aqui" minlength="30" maxlength="300" rows="10"></textarea>
-      <div>
-        <input type="email" id="email"  minlength="11"  placeholder="Digite seu e-mail" autocomplete="email" required/>
-      </div>
-      <div>
-        <input type="tel" id="celular"  min="11" pattern="[0-9]{11}"  placeholder="00000000000" required/>
-      </div>
-      <input type="file" id="foto" accept=".jpg, .jpeg, .png" required />
-      <button class="button" type="submit" id="botaosalvar">Enviar Dica</button>
+        <div class="div">
+            <input type="text" id="nome" placeholder="Seu nome:"  minlength="3"  required />
+        </div>
+    <!-- <input type="text" id="dica" placeholder="Sua dica de jardinagem" required /> -->
+    <div class="textarea">
+        <textarea id="textarea" style="resize: none;" class="list" cols="30" required placeholder="Digite sua dica aqui" minlength="30" maxlength="300" rows="3"></textarea>
+    </div>
+    <label>
+        <svg height="12" id="icon" viewBox="0 0 32 32" width="12" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;}</style></defs><title/><circle cx="16" cy="16" r="8"/><rect class="cls-1" data-name="&lt;Transparent Rectangle&gt;" height="32" id="_Transparent_Rectangle_" width="32"/></svg>
+        <input type="file" id="foto" class="list" accept=".jpg, .jpeg, .png" required hidden/>
+        Foto
+    </label>
+        <div class="celular">
+            <img height="30px"
+            width="30px" src="../assets/imagens/celular.png" alt="">
+            <input type="tel" id="celular"  min="11" pattern="[0-9]{11}"  placeholder="Número de contato" required/>
+        </div>
+        <div>
+            <input type="email" id="email"  minlength="11"  placeholder="E-mail" autocomplete="email" required/>
+        </div>
+        
+        
+        <button class="button" type="submit" id="botaosalvar">Enviar Dica</button>
     </form>
-  </div>
-  </main>
- <script src="../control/cadastro.js"></script>
-  </body>
+    </div>
+    </main>
+    <script src="../control/cadastro.js"></script>
+    </body>
 </html>

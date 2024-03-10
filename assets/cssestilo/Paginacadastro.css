@@ -16,10 +16,9 @@ body  {
     background-image: url('../imagens/Fotodica.png');
     background-size: cover;
     background-position: center;
-  
-  }
+}
 
-input, .button {
+    .button {
     padding: 10px;
     margin: 5px;
     border: none;
@@ -33,7 +32,7 @@ input, .button {
     cursor: pointer;
     border-radius: 5px;
     border: 1px solid white;
-    width: 400px;
+    width: 350px;
     margin: -1px;/* centraliza o botão horizontalmente */
     align-self: center; /* centraliza o botão verticalmente */
 }
@@ -45,22 +44,67 @@ input, .button {
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    /* justify-content: space-between; */
+    /* align-items: center; */
     border: 1px solid rgb(69, 236, 8);
     padding: 20px;
     width: 370px;
     height: 410px;
+    background-color: white;
+    border-radius: 20px;
+    gap:10px;
 }
+form img{
+    height: 30px;
+    width: 30px;
+}
+/* label.textarea { */
+    /* position: relative; */
+/* } */
+
+svg.textarea {
+    position: absolute;
+    top: 20px;
+}
+ .div{
+    width: 100%;
+ }
+
+
+.celular{
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+}
+
+
+#nome{
+    width: 100%;
+     margin: 0px;
+    padding: 0px;
+    height: 40px;
+    border-radius: 10px;
+    
+  }
+
 
 #nome::placeholder{
     font-family: "Fredoka", sans-serif;
     color: #30442D; 
     font-size: 2.0em;
     font-weight: bold;
+    padding: 20px;
+}
+#textarea {
+    height: 170px;
+    width: 100%;
+    border-radius: 10px;
+
 }
 
 #textarea::placeholder {
-    width: 100%;
+    padding-top: 3px;
+    padding-left: 3px;
     font-family: "Open Sans", sans-serif;
     color: #30442D;
     display: flex;
@@ -76,10 +120,13 @@ input, .button {
     gap: 10px;
     flex-wrap: wrap;
     padding: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
- #titulodica{
+#titulodica{
     font-family: "Fredoka", sans-serif;
     display: flex;
     justify-content: center;
- } 
+}
+
