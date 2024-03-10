@@ -107,12 +107,6 @@ function criarElemento(dica){
 
     div.appendChild(botaoEditar)
 
-
-
-
-
-
-
     main.appendChild(div)
 }
 

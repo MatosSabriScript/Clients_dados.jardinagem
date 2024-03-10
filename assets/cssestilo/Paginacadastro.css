@@ -1,73 +1,74 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-  }
-  
-  
-  body  {
-    height:100vh;
-    width:100vw;
-    display:flex;
+}
+
+body  {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
     flex-direction: column;
-    }
-  
-input,  .button {
+}
+
+input, .button {
     padding: 10px;
     margin: 5px;
     border: none;
     border-radius: 5px;
     font-size: 1em;
-  }
-  
-   .button {
-    background-color: #395826; /* Cor de fundo do botão */
+}
+
+.button {
+    background-color: #395826;
     color: #FFF;
     cursor: pointer;
     border-radius: 5px;
-    border:1px solid white;
+    border: 1px solid white;
     width: 400px;
-  }
-  
-  
-   .button:hover {
-    background-color: #e6b800;
-  }
-  
+    margin: -1px;/* centraliza o botão horizontalmente */
+    align-self: center; /* centraliza o botão verticalmente */
+}
 
-.card{
+.button:hover {
+    background-color: #e6b800;
+}
+
+.card {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    border: 1px solid black;
+    border: 1px solid rgb(69, 236, 8);
     padding: 20px;
     width: 370px;
     height: 410px;
-
 }
 
-#nome{
-    width:100%;
+#nome {
+    align-items: flex-start;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
 }
-#textarea{
+
+#textarea {
+    width: 100%;
+    position: static;
+}
+
+#foto {
     width: 100%;
 }
 
-#foto{
-    width:100%;
-}
-/* 
-*{
-    background-image: url('../imagens/Fotodica.png');   
-}   */
-
-
-.main{
+.main {
     display: flex;
     gap: 10px;
-    /* height: 98vh;
-    width: 98vw; */
     flex-wrap: wrap;
     padding: 20px;
-
 }
+
+ #titulodica{
+    font-family: "Fredoka", sans-serif;
+    display: flex;
+    justify-content: center;
+ } 

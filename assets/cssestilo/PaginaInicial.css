@@ -13,7 +13,7 @@ body  {
   align-items: center;
 
 
-  }
+}
 
 .container {
   text-align: center;
@@ -105,35 +105,56 @@ main p {
 } 
 
 .buttonp{
+ background-color: #395826;
  position: absolute;
- top:379px;
+ top: 345px;
+ color: #FFF;
+ cursor: pointer;
+ border-radius: 5px;
+ border:1px solid white;
+ width: 400px;
  left: 50%;
+ height:35px;
  transform:translate(-50%) ;
+ font-size: 28px;
+ text-align: center;
 
 }
 
+.buttonp:hover {
+  background-color: #e6b800;
+}
+
+
  /* Criando responsividade */
-@media screen and (max-width: 767px) {
+
+/* {@media screen and (max-width: 767px) {
   .container {
     gap: 5px;
   }
+}
+
   .jardinagem{
     font-size: 1.3em;
   }
+  
+
   .img {
     display: none;
   }
+
   .buttonp {
     top: 349px;
   }
-}
+
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .img {
     right: 200px;
   }
+
   .buttonp {
     top: 359px;
   }
 }
-  
+} */
