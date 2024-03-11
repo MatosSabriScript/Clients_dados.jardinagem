@@ -47,20 +47,24 @@ function criarDica(nome,dica,email,celular){
 function criarElemento(dica){
     const div= document.createElement("div")
     div.classList.add("card")
-    const elementoNome= document.createElement("span")
+    const elementoNome= document.createElement("p")
     elementoNome.innerHTML=dica.nome
 
-    const elementoDica= document.createElement("span")
-    elementoDica.innerHTML=dica.dica
+    const elementoDica= document.createElement("p")
+    elementoDica.textContent=dica.dica
+    
+    const elementoDiv = document.createElement("div")
+     elementoDiv.appendChild(elementoDica)
+     elementoDiv.classList.add("paragrafo")
 
-    const elementoEmail= document.createElement("span")
+    const elementoEmail= document.createElement("p")
     elementoEmail.innerHTML=dica.email
 
-    const elementoCelular= document.createElement("span")
+    const elementoCelular= document.createElement("p")
     elementoCelular.innerHTML=dica.celular
 
     div.appendChild(elementoNome)
-    div.appendChild(elementoDica)
+    div.appendChild(elementoDiv)
     div.appendChild(elementoEmail)
     div.appendChild(elementoCelular)
     
